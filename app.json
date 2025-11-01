@@ -3,11 +3,7 @@
     "name": "WhatDocSays",
     "slug": "whatdocsays",
     "scheme": "whatdocsays",
-    "owner": null,
-    "router": {
-      "origin": "expo-router",
-      "srcDir": "src/app"
-    },
+    "owner": "whatdocsays",
     "plugins": [
       [
         "react-native-vision-camera"
@@ -19,7 +15,8 @@
         "expo-build-properties",
         {
           "ios": {
-            "newArchEnabled": true
+            "newArchEnabled": true,
+            "deploymentTarget": "18.0"
           }
         }
       ],
@@ -28,7 +25,6 @@
     ],
     "ios": {
       "bundleIdentifier": "com.whatdocsays.app",
-      "deploymentTarget": "18.0",
       "infoPlist": {
         "NSCameraUsageDescription": "Scan prescriptions and instructions from your doctor.",
         "NSPhotoLibraryUsageDescription": "Select images from your photo library to extract text.",
