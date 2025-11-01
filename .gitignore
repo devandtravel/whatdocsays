@@ -207,5 +207,5 @@ build/
 *.seed
 *.pid.lock
 .npm
-.eslintcache
+.biome/
 .stylelintcache

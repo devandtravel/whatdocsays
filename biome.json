@@ -1,0 +1,102 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.2/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
+	"files": {
+		"ignoreUnknown": false
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": false,
+			"complexity": {
+				"noUselessConstructor": "warn"
+			},
+			"correctness": {
+				"noEmptyCharacterClassInRegex": "warn",
+				"noEmptyPattern": "warn",
+				"noUndeclaredVariables": "error",
+				"noUnreachable": "warn",
+				"noUnusedLabels": "warn",
+				"noUnusedVariables": "warn",
+				"useExhaustiveDependencies": "warn",
+				"useHookAtTopLevel": "error",
+				"useIsNan": "error",
+				"useValidTypeof": "error"
+			},
+			"security": {
+				"noDangerouslySetInnerHtmlWithChildren": "warn"
+			},
+			"style": {
+				"noCommonJs": "warn",
+				"useConsistentArrayType": {
+					"level": "warn",
+					"options": {
+						"syntax": "shorthand"
+					}
+				}
+			},
+			"suspicious": {
+				"noDoubleEquals": "warn",
+				"noDuplicateCase": "error",
+				"noDuplicateClassMembers": "error",
+				"noDuplicateJsxProps": "error",
+				"noDuplicateObjectKeys": "error",
+				"noDuplicateParameters": "error",
+				"noExtraNonNullAssertion": "warn",
+				"noRedeclare": "warn",
+				"noUnsafeNegation": "warn",
+				"noVar": "error",
+				"noWith": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double"
+		},
+		"globals": [
+			"__DEV__",
+			"global",
+			"console",
+			"process",
+			"Buffer",
+			"setTimeout",
+			"clearTimeout",
+			"setInterval",
+			"clearInterval"
+		]
+	},
+	"overrides": [
+		{
+			"includes": [
+				"*.config.js",
+				"*.config.cjs",
+				"*.config.mjs"
+			],
+			"javascript": {
+				"globals": [
+					"require",
+					"__dirname",
+					"module",
+					"exports"
+				]
+			}
+		}
+	],
+	"assist": {
+		"enabled": true,
+		"actions": {
+			"source": {
+				"organizeImports": "on"
+			}
+		}
+	}
+}
