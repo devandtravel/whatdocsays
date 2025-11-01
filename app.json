@@ -1,47 +1,43 @@
 {
-  "expo": {
-    "name": "WhatDocSays",
-    "slug": "whatdocsays",
-    "scheme": "whatdocsays",
-    "owner": "whatdocsays",
-    "plugins": [
-      [
-        "react-native-vision-camera"
-      ],
-      [
-        "expo-notifications"
-      ],
-      [
-        "expo-build-properties",
-        {
-          "ios": {
-            "newArchEnabled": true,
-            "deploymentTarget": "18.0"
-          }
-        }
-      ],
-      "expo-router",
-      "expo-font"
-    ],
-    "ios": {
-      "bundleIdentifier": "com.whatdocsays.app",
-      "infoPlist": {
-        "NSCameraUsageDescription": "Scan prescriptions and instructions from your doctor.",
-        "NSPhotoLibraryUsageDescription": "Select images from your photo library to extract text.",
-        "NSUserNotificationUsageDescription": "Get reminders to follow your doctor's plan."
-      }
-    },
-    "android": {
-      "package": "com.whatdocsays.app",
-      "permissions": [
-        "CAMERA",
-        "SCHEDULE_EXACT_ALARM",
-        "POST_NOTIFICATIONS",
-        "VIBRATE"
-      ]
-    },
-    "extra": {
-      "primaryDomain": "whatdocsays.com"
-    }
-  }
+	"expo": {
+		"name": "WhatDocSays",
+		"slug": "whatdocsays",
+		"scheme": "whatdocsays",
+		"owner": "whatdocsays",
+		"plugins": [
+			["react-native-vision-camera"],
+			["expo-notifications"],
+			[
+				"expo-build-properties",
+				{
+					"ios": {
+						"newArchEnabled": true,
+						"deploymentTarget": "18.0"
+					}
+				}
+			],
+			"expo-router",
+			"expo-font"
+		],
+		"ios": {
+			"bundleIdentifier": "com.whatdocsays.app",
+			"infoPlist": {
+				"NSCameraUsageDescription": "Scan prescriptions and instructions from your doctor.",
+				"NSPhotoLibraryUsageDescription": "Select images from your photo library to extract text.",
+				"NSUserNotificationUsageDescription": "Get reminders to follow your doctor's plan."
+			}
+		},
+		"android": {
+			"package": "com.whatdocsays.app",
+			"permissions": [
+				"CAMERA",
+				"SCHEDULE_EXACT_ALARM",
+				"POST_NOTIFICATIONS",
+				"VIBRATE"
+			]
+		},
+		"extra": {
+			"primaryDomain": "whatdocsays.com"
+		}
+	}
 }

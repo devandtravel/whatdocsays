@@ -88,6 +88,26 @@
 					"module",
 					"exports"
 				]
+			},
+			"linter": {
+				"rules": {
+					"style": {
+						"noCommonJs": "off"
+					}
+				}
+			}
+		},
+		{
+			"includes": [
+				"src/app/capture.tsx",
+				"src/lib/ocr.ts"
+			],
+			"linter": {
+				"rules": {
+					"style": {
+						"noCommonJs": "off"
+					}
+				}
 			}
 		}
 	],
